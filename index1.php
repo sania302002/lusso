@@ -12,7 +12,7 @@ $query = mysqli_query($conn,$q1);
 <?php
 	session_start();
 	if(!ISSET($_SESSION['email'])){
-		header('location:index1.php');
+		header('location:index1.html');
 	}
 ?>
 
@@ -50,7 +50,7 @@ $query = mysqli_query($conn,$q1);
         <a href="#"><img src="img1/Logo1.png" class="logo" alt=""></a>
     
             <ul id="navbar">
-                <li><a class="active" href="index1.php">Home</a></li>
+                <li><a class="active" href="index1.html">Home</a></li>
                 <li><a href="shop1.php">Shop</a></li>
                 <li><a href="index1.html">Blog</a></li>
                 <li><a href="about1.php">About</a></li>

@@ -13,7 +13,7 @@ $query = mysqli_query($conn,$q1);
 <?php
 	session_start();
 	if(!ISSET($_SESSION['email'])){
-		header('location:index1.php');
+		header('location:index1.html');
 	}
 ?>
 
@@ -59,7 +59,7 @@ $query = mysqli_query($conn,$q1);
         
         <div>
             <ul id="navbar">
-                <li><a href="index1.php">Home</a></li>
+                <li><a href="index1.html">Home</a></li>
                 <li><a class="active" href="shop1.php">Shop</a></li>
                 <li><a href="index1.html">Blog</a></li>
                 <li><a href="about1.php">About</a></li>

@@ -45,7 +45,7 @@ $query = mysqli_query($conn,$q1);
         
         <div>
             <ul id="navbar">
-                <li><a class="active" href="index.php">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="login.php">Shop</a></li>
                 <li><a href="blog2.php">Blog</a></li>
                 <li><a href="about2.php">About</a></li>

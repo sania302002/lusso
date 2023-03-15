@@ -5,6 +5,6 @@ $id = $_GET['id'];
 //deleting the row from table
 $result = mysqli_query($mysqli, "DELETE FROM cart WHERE id=$id");
  
-//redirecting to the display page (index.php in our case)
+//redirecting to the display page (index.html in our case)
 header("Location:Cart1.php");
 ?>

@@ -53,7 +53,7 @@ if (isset($_POST['login'])) {
     if ($user_matched > 0) {
 
         $_SESSION["email"] = $email;
-        header("location:index1.php");
+        header("location:index1.html");
     } else {
         echo "User email or password is not matched <br/><br/>";
     }
