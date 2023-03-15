@@ -1,19 +1,18 @@
 <?php
 include './db.php';
-if(isset($_POST['submit'])){
+if (isset($_POST['submit'])){
     $name = $_POST['name'];
-    $email= $_POST['email'];
+    $email    = $_POST['email'];
     $sub = $_POST['sub'];
     $message = $_POST['message'];
+    $sql=mysqli_query($mysqli,"INSERT INTO `contact`(`name`,`email`, `subject`, `message`) VALUES ('$name','$email','$sub','$message')");
+    echo $sql;
+        if ($sql) {
+            echo "<br/><br/>Form Submitted successfully.";
+        } else {
+            echo "Submission error. Please try again." . mysqli_error($mysqli);
+        }
 
-    $sql = "INSERT INTO `contact`(`name`, `email`,` subject`, `message`)VALUES('$name', '$email', '$sub', '$message')";
-    $run = mysqli_query($mysqli, $sql);
-
-    if($run){
-        echo "Form Submitted";
-    }else{
-        echo "Having Issues in submitting the form.";
-    }
 }
 
 ?>
@@ -87,20 +86,20 @@ if(isset($_POST['submit'])){
         </div>
     </section>
     <section id="from-details">
-        <form action=" ">
+        <form action="#" method="POST">
             <span>
                 Leave a message for us.
             </span>
             <h2>
                 We love to hear from you
             </h2>
-            <form action="#" method="post">
+            <!-- <form action="#" method="post"> -->
                 <input type="text" name="name" placeholder="Your Name" id="">
                 <input type="email" name="email" placeholder="Your Email" id="">
                 <input type="text" name="sub" placeholder="Subject" id="">
                 <textarea  name="message" placeholder="Your Message" cols="5" rows="8" id=""></textarea>
-                <input type="submit" value="Submit" name="submit">
-            </form>
+                <input type="submit" value="submit" name="submit">
+            <!-- </form> -->
         </form>
     <div class="people">
         <div>

@@ -1,3 +1,23 @@
+<?php
+include './db.php';
+if (isset($_POST['submit'])){
+    $name = $_POST['name'];
+    $email    = $_POST['email'];
+    $sub = $_POST['sub'];
+    $message = $_POST['message'];
+    $sql=mysqli_query($mysqli,"INSERT INTO `contact`(`name`,`email`, `subject`, `message`) VALUES ('$name','$email','$sub','$message')");
+    echo $sql;
+        if ($sql) {
+            echo "<br/><br/>User Registered successfully.";
+        } else {
+            echo "Registration error. Please try again." . mysqli_error($mysqli);
+        }
+
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
