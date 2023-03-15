@@ -41,7 +41,7 @@ if (isset($_POST['submit'])){
             <ul id="navbar">
                 <li><a href="index1.php">Home</a></li>
                 <li><a href="shop1.php">Shop</a></li>
-                <li><a href="blog1.php">Blog</a></li>
+                <li><a href="index1.html">Blog</a></li>
                 <li><a href="about1.php">About</a></li>
                 <li><a class="active" href="contact1.php">Contact</a></li>
                 

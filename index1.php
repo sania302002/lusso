@@ -52,7 +52,7 @@ $query = mysqli_query($conn,$q1);
             <ul id="navbar">
                 <li><a class="active" href="index1.php">Home</a></li>
                 <li><a href="shop1.php">Shop</a></li>
-                <li><a href="blog1.php">Blog</a></li>
+                <li><a href="index1.html">Blog</a></li>
                 <li><a href="about1.php">About</a></li>
                 <li><a href="contact1.php">Contact</a></li>
                 <li><a href="logout.php">Logout</a></li>
@@ -368,7 +368,7 @@ $query = mysqli_query($conn,$q1);
             <h4>Crazy Deals of Lusso</h4>
             <h2>Buy 1 Get 1 Offer is here!!</h2>
             <span>Special discounts on selected products.</span>
-            <a href="blog1.php"><button class="white">Learn More</button></a>
+            <a href="index1.html"><button class="white">Learn More</button></a>
         </div>
         <div class="banner-box banner-box2">
             <h4>Lusso presents</h4>
